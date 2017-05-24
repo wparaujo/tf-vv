@@ -11,27 +11,29 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :user_name %>
-  </div>
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <div class="form-group">
+        <%= form.label :nome %>
+        <%= form.text_field :name, id: :user_name, class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :user_email %>
-  </div>
+      <div class="form-group">
+        <%= form.label :email %>
+        <%= form.text_field :email, id: :user_email, class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <%= form.label :password %>
-    <%= form.password_field :password, id: :user_password %>
-  </div>
+      <div class="form-group">
+        <%= form.label :senha %>
+        <%= form.password_field :password, id: :user_password, class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation, id: :user_password %>
-  </div>
+      <div class="form-group">
+        <%= form.label :confirme_a_senha %>
+        <%= form.password_field :password_confirmation, id: :user_password, class: 'form-control' %>
+      </div>
 
-  <div class="actions">
-    <%= form.submit %>
+      <%= form.submit 'Cadastrar', class: 'btn btn-primary' %>
+    </div>
   </div>
 <% end %>

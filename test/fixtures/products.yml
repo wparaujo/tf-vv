@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  email: MyString
-  password: MyString
+  description: MyString
+  user_id: 0
 
 two:
-  name: MyString
-  email: MyString
-  password: MyString
+  name: prod
+  description: 123
+  user_id: 1

@@ -6,7 +6,8 @@ class ProductTest < ActionDispatch::PerformanceTest
   # self.profile_options = { runs: 5, metrics: [:wall_time, :memory],
   #                          output: 'tmp/performance', formats: [:flat] }
 
-  test "homepage" do
-    get '/'
-  end
+  # test "homepage" do
+  #   get '/'
+  # end
+  
 end
